@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var progressBar: UIProgressView!
     
-    @IBAction func hardmessSelected(_ sender: UIButton) {
+    @IBAction func hardnessSelected(_ sender: UIButton) {
         totalTime = 0
         secondsPassed = 0
         progressBar.progress = 0
