@@ -10,35 +10,10 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func cKeyPressed(_ sender: UIButton) {
-        playSound(note: "C")
-    }
-    
-    @IBAction func dKeyPressed(_ sender: UIButton) {
-        playSound(note: "D")
-    }
-    
-    
-    
-    @IBAction func eKeyPressed(_ sender: UIButton) {
-        playSound(note: "E")
-    }
-    
-    @IBAction func fKeyPressed(_ sender: UIButton) {
-        playSound(note: "F")
-    }
-    
-    
-    @IBAction func gKeyPressed(_ sender: UIButton) {
-        playSound(note: "G")
-    }
-    
-    @IBAction func aKeyPressed(_ sender: UIButton) {
-        playSound(note: "A")
-    }
-    
-    @IBAction func bKeyPressed(_ sender: UIButton) {
-        playSound(note: "B")
+    @IBAction func keyPressed(_ sender: UIButton) {
+        playSound(note: sender.currentTitle!)
+        // below is the same thing.
+//        playSound(note: sender.titleLabel?.text ?? "C")
     }
     
     func playSound(note: String) {
