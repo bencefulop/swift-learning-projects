@@ -19,16 +19,11 @@ class WelcomeViewController: UIViewController {
         let titleText = "⚡️FlashChat"
         
         for letter in titleText {
-            print(0.1 * characterIndex)
-            print("----")
-            print(letter)
             Timer.scheduledTimer(withTimeInterval: 0.1 * characterIndex, repeats: false) { (timer) in
                 self.titleLabel.text?.append(letter)
             }
             characterIndex += 1
         }
-        
-        
     }
     
     
