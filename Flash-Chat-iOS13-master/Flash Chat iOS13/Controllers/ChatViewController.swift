@@ -9,15 +9,23 @@
 import UIKit
 import Firebase
 
-class ChatViewController: UIViewController {
+class ChatViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var messageTextfield: UITextField!
     
+    var messages: [Message] = [
+        Message(sender: "1@2.com", body: "Hey"),
+        Message(sender: "a@b.com", body: "Hello"),
+        Message(sender: "1@2.com", body: "What's up?")
+    ]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
         navigationItem.hidesBackButton = true
-        title = "⚡️ FlashChat"
+        title = Constants.appName
     }
     
     @IBAction func sendPressed(_ sender: UIButton) {
@@ -33,4 +41,18 @@ class ChatViewController: UIViewController {
             print("Error signing out: %@", signOutError)
         }
     }
+  
+    // MARK: - UITableViewDataSource
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return messages.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: Constants.cellIdentifier, for: indexPath)
+        cell.textLabel?.text = messages[indexPath.row].body
+        return cell
+    }
+
+    // MARK: - UITableViewDelegate
+
 }
