@@ -12,6 +12,7 @@
 		DDCE7EB026919ACB00D2CBA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCE7EAF26919ACB00D2CBA8 /* Assets.xcassets */; };
 		DDCE7EB326919ACB00D2CBA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCE7EB226919ACB00D2CBA8 /* Preview Assets.xcassets */; };
 		DDCE7EBC26919CD700D2CBA8 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDCE7EBB26919CD700D2CBA8 /* Pacifico-Regular.ttf */; };
+		DDCE7EC02691A5D600D2CBA8 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE7EBF2691A5D600D2CBA8 /* InfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		DDCE7EB226919ACB00D2CBA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DDCE7EB426919ACB00D2CBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDCE7EBB26919CD700D2CBA8 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pacifico-Regular.ttf"; path = "../../../../../../Downloads/Pacifico/Pacifico-Regular.ttf"; sourceTree = "<group>"; };
+		DDCE7EBF2691A5D600D2CBA8 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				DDCE7EAF26919ACB00D2CBA8 /* Assets.xcassets */,
 				DDCE7EB426919ACB00D2CBA8 /* Info.plist */,
 				DDCE7EB126919ACB00D2CBA8 /* Preview Content */,
+				DDCE7EBF2691A5D600D2CBA8 /* InfoView.swift */,
 			);
 			path = "SwiftUI BusinessCard";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DDCE7EAE26919ACA00D2CBA8 /* ContentView.swift in Sources */,
+				DDCE7EC02691A5D600D2CBA8 /* InfoView.swift in Sources */,
 				DDCE7EAC26919ACA00D2CBA8 /* SwiftUI_BusinessCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

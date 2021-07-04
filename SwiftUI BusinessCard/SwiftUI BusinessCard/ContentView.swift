@@ -17,7 +17,8 @@ struct ContentView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 150, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                    .clipShape(Circle())
+                    .overlay(Circle().stroke(Color.white, lineWidth: 5))
                 Text("Bence Fulop")
                     .font(Font.custom("Pacifico-Regular", size: 40))
                     .bold()
@@ -25,6 +26,9 @@ struct ContentView: View {
                 Text("iOS Developer")
                     .foregroundColor(.white)
                     .font(.system(size: 25))
+                Divider()
+                InfoView(text: "+61 410 549 633", imageName: "phone.fill")
+                InfoView(text: "fbence90@gmail.com", imageName: "envelope.fill")
             }
         }
     }
@@ -35,3 +39,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
