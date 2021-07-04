@@ -49,6 +49,8 @@ class ChatViewController: UIViewController, UITableViewDataSource {
                             
                             DispatchQueue.main.async {
                                 self.tableView.reloadData()
+                                let indexPath = IndexPath(row: self.messages.count - 1, section: 0)
+                                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
                             }
                         }
                     }
@@ -67,6 +69,10 @@ class ChatViewController: UIViewController, UITableViewDataSource {
                 if let e = error {
                     print("there was an issue saving data to firestore, \(e)")
                 } else {
+                    
+                    DispatchQueue.main.async {
+                        self.messageTextfield.text = ""
+                    }
                     print("successfully saved data")
                 }
             }
