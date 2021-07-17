@@ -15,7 +15,21 @@ struct ContentView: View {
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Image("diceeLogo")
-                Image("dice1")
+                HStack {
+                    DiceView(n: 1)
+                    DiceView(n: 2)
+                }
+                .padding(.horizontal)
+                Button(action: {
+                    
+                }, label: {
+                    Text("Roll")
+                        .font(.system(size: 50))
+                        .fontWeight(.heavy)
+                        .foregroundColor(.white)
+                        .padding(.horizontal)
+                })
+                .background(Color.red)
             }
         }
     }
@@ -24,5 +38,15 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct DiceView: View {
+    let n: Int
+    var body: some View {
+        Image("dice\(n)")
+            .resizable()
+            .aspectRatio(1, contentMode: .fit)
+            .padding()
     }
 }
