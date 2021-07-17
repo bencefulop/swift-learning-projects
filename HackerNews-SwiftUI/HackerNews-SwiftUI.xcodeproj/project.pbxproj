@@ -13,6 +13,8 @@
 		DDD2F23526A2674B00397252 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDD2F23426A2674B00397252 /* Preview Assets.xcassets */; };
 		DDD2F23E26A26AC100397252 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2F23D26A26AC100397252 /* NetworkManager.swift */; };
 		DDD2F24026A26C4A00397252 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2F23F26A26C4A00397252 /* PostData.swift */; };
+		DDD2F24326A276A900397252 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2F24226A276A900397252 /* DetailView.swift */; };
+		DDD2F24526A27B0B00397252 /* Webview.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDD2F24426A27B0B00397252 /* Webview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		DDD2F23626A2674B00397252 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DDD2F23D26A26AC100397252 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DDD2F23F26A26C4A00397252 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		DDD2F24226A276A900397252 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		DDD2F24426A27B0B00397252 /* Webview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +60,9 @@
 		DDD2F22C26A2674800397252 /* HackerNews-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DDD2F24126A2769000397252 /* Views */,
 				DDD2F23C26A26AB000397252 /* Models */,
 				DDD2F22D26A2674800397252 /* HackerNews_SwiftUIApp.swift */,
-				DDD2F22F26A2674800397252 /* ContentView.swift */,
 				DDD2F23126A2674B00397252 /* Assets.xcassets */,
 				DDD2F23626A2674B00397252 /* Info.plist */,
 				DDD2F23326A2674B00397252 /* Preview Content */,
@@ -81,6 +85,16 @@
 				DDD2F23F26A26C4A00397252 /* PostData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DDD2F24126A2769000397252 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DDD2F22F26A2674800397252 /* ContentView.swift */,
+				DDD2F24226A276A900397252 /* DetailView.swift */,
+				DDD2F24426A27B0B00397252 /* Webview.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +169,8 @@
 				DDD2F23E26A26AC100397252 /* NetworkManager.swift in Sources */,
 				DDD2F24026A26C4A00397252 /* PostData.swift in Sources */,
 				DDD2F23026A2674800397252 /* ContentView.swift in Sources */,
+				DDD2F24526A27B0B00397252 /* Webview.swift in Sources */,
+				DDD2F24326A276A900397252 /* DetailView.swift in Sources */,
 				DDD2F22E26A2674800397252 /* HackerNews_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
