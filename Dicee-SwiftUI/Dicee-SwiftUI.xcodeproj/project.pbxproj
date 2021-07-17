@@ -7,27 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DDCE7EAC26919ACA00D2CBA8 /* SwiftUI_BusinessCardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE7EAB26919ACA00D2CBA8 /* SwiftUI_BusinessCardApp.swift */; };
-		DDCE7EAE26919ACA00D2CBA8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE7EAD26919ACA00D2CBA8 /* ContentView.swift */; };
-		DDCE7EB026919ACB00D2CBA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCE7EAF26919ACB00D2CBA8 /* Assets.xcassets */; };
-		DDCE7EB326919ACB00D2CBA8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDCE7EB226919ACB00D2CBA8 /* Preview Assets.xcassets */; };
-		DDCE7EBC26919CD700D2CBA8 /* Pacifico-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DDCE7EBB26919CD700D2CBA8 /* Pacifico-Regular.ttf */; };
-		DDCE7EC02691A5D600D2CBA8 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDCE7EBF2691A5D600D2CBA8 /* InfoView.swift */; };
+		DD092E6B26A25E0B005B41EF /* Dicee_SwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD092E6A26A25E0B005B41EF /* Dicee_SwiftUIApp.swift */; };
+		DD092E6D26A25E0B005B41EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD092E6C26A25E0B005B41EF /* ContentView.swift */; };
+		DD092E6F26A25E11005B41EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD092E6E26A25E11005B41EF /* Assets.xcassets */; };
+		DD092E7226A25E11005B41EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD092E7126A25E11005B41EF /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DDCE7EA826919ACA00D2CBA8 /* SwiftUI BusinessCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI BusinessCard.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		DDCE7EAB26919ACA00D2CBA8 /* SwiftUI_BusinessCardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_BusinessCardApp.swift; sourceTree = "<group>"; };
-		DDCE7EAD26919ACA00D2CBA8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		DDCE7EAF26919ACB00D2CBA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DDCE7EB226919ACB00D2CBA8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		DDCE7EB426919ACB00D2CBA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DDCE7EBB26919CD700D2CBA8 /* Pacifico-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pacifico-Regular.ttf"; path = "../../../../../../Downloads/Pacifico/Pacifico-Regular.ttf"; sourceTree = "<group>"; };
-		DDCE7EBF2691A5D600D2CBA8 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		DD092E6726A25E0B005B41EF /* Dicee-SwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dicee-SwiftUI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD092E6A26A25E0B005B41EF /* Dicee_SwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dicee_SwiftUIApp.swift; sourceTree = "<group>"; };
+		DD092E6C26A25E0B005B41EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DD092E6E26A25E11005B41EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DD092E7126A25E11005B41EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DD092E7326A25E11005B41EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		DDCE7EA526919ACA00D2CBA8 /* Frameworks */ = {
+		DD092E6426A25E0B005B41EF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,87 +33,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DDCE7E9F26919ACA00D2CBA8 = {
+		DD092E5E26A25E0B005B41EF = {
 			isa = PBXGroup;
 			children = (
-				DDCE7EAA26919ACA00D2CBA8 /* SwiftUI BusinessCard */,
-				DDCE7EA926919ACA00D2CBA8 /* Products */,
+				DD092E6926A25E0B005B41EF /* Dicee-SwiftUI */,
+				DD092E6826A25E0B005B41EF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		DDCE7EA926919ACA00D2CBA8 /* Products */ = {
+		DD092E6826A25E0B005B41EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDCE7EA826919ACA00D2CBA8 /* SwiftUI BusinessCard.app */,
+				DD092E6726A25E0B005B41EF /* Dicee-SwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		DDCE7EAA26919ACA00D2CBA8 /* SwiftUI BusinessCard */ = {
+		DD092E6926A25E0B005B41EF /* Dicee-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				DDCE7EBA26919CC700D2CBA8 /* Fonts */,
-				DDCE7EAB26919ACA00D2CBA8 /* SwiftUI_BusinessCardApp.swift */,
-				DDCE7EAD26919ACA00D2CBA8 /* ContentView.swift */,
-				DDCE7EAF26919ACB00D2CBA8 /* Assets.xcassets */,
-				DDCE7EB426919ACB00D2CBA8 /* Info.plist */,
-				DDCE7EB126919ACB00D2CBA8 /* Preview Content */,
-				DDCE7EBF2691A5D600D2CBA8 /* InfoView.swift */,
+				DD092E6A26A25E0B005B41EF /* Dicee_SwiftUIApp.swift */,
+				DD092E6C26A25E0B005B41EF /* ContentView.swift */,
+				DD092E6E26A25E11005B41EF /* Assets.xcassets */,
+				DD092E7326A25E11005B41EF /* Info.plist */,
+				DD092E7026A25E11005B41EF /* Preview Content */,
 			);
-			path = "SwiftUI BusinessCard";
+			path = "Dicee-SwiftUI";
 			sourceTree = "<group>";
 		};
-		DDCE7EB126919ACB00D2CBA8 /* Preview Content */ = {
+		DD092E7026A25E11005B41EF /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				DDCE7EB226919ACB00D2CBA8 /* Preview Assets.xcassets */,
+				DD092E7126A25E11005B41EF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		DDCE7EBA26919CC700D2CBA8 /* Fonts */ = {
-			isa = PBXGroup;
-			children = (
-				DDCE7EBB26919CD700D2CBA8 /* Pacifico-Regular.ttf */,
-			);
-			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		DDCE7EA726919ACA00D2CBA8 /* SwiftUI BusinessCard */ = {
+		DD092E6626A25E0B005B41EF /* Dicee-SwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DDCE7EB726919ACB00D2CBA8 /* Build configuration list for PBXNativeTarget "SwiftUI BusinessCard" */;
+			buildConfigurationList = DD092E7626A25E11005B41EF /* Build configuration list for PBXNativeTarget "Dicee-SwiftUI" */;
 			buildPhases = (
-				DDCE7EA426919ACA00D2CBA8 /* Sources */,
-				DDCE7EA526919ACA00D2CBA8 /* Frameworks */,
-				DDCE7EA626919ACA00D2CBA8 /* Resources */,
+				DD092E6326A25E0B005B41EF /* Sources */,
+				DD092E6426A25E0B005B41EF /* Frameworks */,
+				DD092E6526A25E0B005B41EF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "SwiftUI BusinessCard";
-			productName = "SwiftUI BusinessCard";
-			productReference = DDCE7EA826919ACA00D2CBA8 /* SwiftUI BusinessCard.app */;
+			name = "Dicee-SwiftUI";
+			productName = "Dicee-SwiftUI";
+			productReference = DD092E6726A25E0B005B41EF /* Dicee-SwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		DDCE7EA026919ACA00D2CBA8 /* Project object */ = {
+		DD092E5F26A25E0B005B41EF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
-					DDCE7EA726919ACA00D2CBA8 = {
-						CreatedOnToolsVersion = 12.5;
+					DD092E6626A25E0B005B41EF = {
+						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = DDCE7EA326919ACA00D2CBA8 /* Build configuration list for PBXProject "SwiftUI BusinessCard" */;
+			buildConfigurationList = DD092E6226A25E0B005B41EF /* Build configuration list for PBXProject "Dicee-SwiftUI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -125,44 +111,42 @@
 				en,
 				Base,
 			);
-			mainGroup = DDCE7E9F26919ACA00D2CBA8;
-			productRefGroup = DDCE7EA926919ACA00D2CBA8 /* Products */;
+			mainGroup = DD092E5E26A25E0B005B41EF;
+			productRefGroup = DD092E6826A25E0B005B41EF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				DDCE7EA726919ACA00D2CBA8 /* SwiftUI BusinessCard */,
+				DD092E6626A25E0B005B41EF /* Dicee-SwiftUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DDCE7EA626919ACA00D2CBA8 /* Resources */ = {
+		DD092E6526A25E0B005B41EF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDCE7EBC26919CD700D2CBA8 /* Pacifico-Regular.ttf in Resources */,
-				DDCE7EB326919ACB00D2CBA8 /* Preview Assets.xcassets in Resources */,
-				DDCE7EB026919ACB00D2CBA8 /* Assets.xcassets in Resources */,
+				DD092E7226A25E11005B41EF /* Preview Assets.xcassets in Resources */,
+				DD092E6F26A25E11005B41EF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		DDCE7EA426919ACA00D2CBA8 /* Sources */ = {
+		DD092E6326A25E0B005B41EF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDCE7EAE26919ACA00D2CBA8 /* ContentView.swift in Sources */,
-				DDCE7EC02691A5D600D2CBA8 /* InfoView.swift in Sources */,
-				DDCE7EAC26919ACA00D2CBA8 /* SwiftUI_BusinessCardApp.swift in Sources */,
+				DD092E6D26A25E0B005B41EF /* ContentView.swift in Sources */,
+				DD092E6B26A25E0B005B41EF /* Dicee_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		DDCE7EB526919ACB00D2CBA8 /* Debug */ = {
+		DD092E7426A25E11005B41EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,7 +207,7 @@
 			};
 			name = Debug;
 		};
-		DDCE7EB626919ACB00D2CBA8 /* Release */ = {
+		DD092E7526A25E11005B41EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -278,49 +262,45 @@
 			};
 			name = Release;
 		};
-		DDCE7EB826919ACB00D2CBA8 /* Debug */ = {
+		DD092E7726A25E11005B41EF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI BusinessCard/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Dicee-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = X3BL8Q43B9;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI BusinessCard/Info.plist";
+				INFOPLIST_FILE = "Dicee-SwiftUI/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "bencefulop.com.SwiftUI-BusinessCard";
+				PRODUCT_BUNDLE_IDENTIFIER = "bencefulop.com.Dicee-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		DDCE7EB926919ACB00D2CBA8 /* Release */ = {
+		DD092E7826A25E11005B41EF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI BusinessCard/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Dicee-SwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = X3BL8Q43B9;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = "SwiftUI BusinessCard/Info.plist";
+				INFOPLIST_FILE = "Dicee-SwiftUI/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "bencefulop.com.SwiftUI-BusinessCard";
+				PRODUCT_BUNDLE_IDENTIFIER = "bencefulop.com.Dicee-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -329,25 +309,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DDCE7EA326919ACA00D2CBA8 /* Build configuration list for PBXProject "SwiftUI BusinessCard" */ = {
+		DD092E6226A25E0B005B41EF /* Build configuration list for PBXProject "Dicee-SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDCE7EB526919ACB00D2CBA8 /* Debug */,
-				DDCE7EB626919ACB00D2CBA8 /* Release */,
+				DD092E7426A25E11005B41EF /* Debug */,
+				DD092E7526A25E11005B41EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		DDCE7EB726919ACB00D2CBA8 /* Build configuration list for PBXNativeTarget "SwiftUI BusinessCard" */ = {
+		DD092E7626A25E11005B41EF /* Build configuration list for PBXNativeTarget "Dicee-SwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DDCE7EB826919ACB00D2CBA8 /* Debug */,
-				DDCE7EB926919ACB00D2CBA8 /* Release */,
+				DD092E7726A25E11005B41EF /* Debug */,
+				DD092E7826A25E11005B41EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = DDCE7EA026919ACA00D2CBA8 /* Project object */;
+	rootObject = DD092E5F26A25E0B005B41EF /* Project object */;
 }
