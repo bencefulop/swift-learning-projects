@@ -11,24 +11,11 @@ import UIKit
 class TodoListViewController: UITableViewController {
     
     var itemArray = [Item]()
-    let newItem1 = Item(title: "Find Mike")
-    let newItem2 = Item(title: "Buy eggos")
-    let newItem3 = Item(title: "Destroy Demogorgon")
-
     let dataFilepath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent("Items.plist")
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        itemArray.append(newItem1)
-        itemArray.append(newItem2)
-        itemArray.append(newItem3)
-        
-//        if let items = defaults.array(forKey: "TodoListArray") as? [Item] {
-//            itemArray = items
-//        }
-        
+        loadItems()
     }
     
     // MARK: - TableView Datasource Methods
@@ -93,6 +80,17 @@ class TodoListViewController: UITableViewController {
             try data.write(to: dataFilepath!)
         } catch {
             print("error encoding item array: \(error)")
+        }
+    }
+    
+    func loadItems() {
+        if let data = try? Data(contentsOf: dataFilepath!) {
+            let decoder = PropertyListDecoder()
+            do {
+                itemArray = try decoder.decode([Item].self, from: data)
+            } catch {
+                print(error)
+            }
         }
     }
 }
