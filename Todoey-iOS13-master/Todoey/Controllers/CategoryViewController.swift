@@ -7,46 +7,49 @@
 //
 
 import UIKit
-import CoreData
+import RealmSwift
 
 class CategoryViewController: UITableViewController {
-
+    let realm = try! Realm()
+    
     var categoryArray = [Category]()
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadCategories()
+//        loadCatesgories()
     }
     
-    func saveCategories() {
+    func saveCategories(_ category: Category) {
         do {
-            try context.save()
+            try realm.write{
+                realm.add(category)
+            }
         } catch {
             print("error saving categories:\(error)")
         }
         tableView.reloadData()
     }
     
-    func loadCategories(with request: NSFetchRequest<Category> = Category.fetchRequest()) {
-        do {
-            categoryArray = try context.fetch(request)
-        } catch {
-            print("error loading categories:\(error)")
-        }
-        tableView.reloadData()
-    }
+//    func loadCategories(with request: NSFetchRequest<Category> = Category.fetchRequest()) {
+//        do {
+//            categoryArray = try context.fetch(request)
+//        } catch {
+//            print("error loading categories:\(error)")
+//        }
+//        tableView.reloadData()
+//    }
 
     @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
         var textField = UITextField()
         let alert = UIAlertController(title: "Add a new category ", message: "", preferredStyle: .alert)
         let action = UIAlertAction(title: "Add category", style: .default) { action in
                         
-            let newCategory = Category(context: self.context)
-            newCategory.name = textField.text
+            let newCategory = Category()
+            newCategory.name = textField.text!
             
             self.categoryArray.append(newCategory)
-            self.saveCategories()
+            self.saveCategories(newCategory)
             self.tableView.reloadData()
         }
         
