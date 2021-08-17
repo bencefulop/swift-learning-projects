@@ -24,7 +24,7 @@ class TodoListViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
-//        loadItems()
+        loadItems()
     }
     
     // MARK: - TableView Datasource Methods
@@ -49,14 +49,18 @@ class TodoListViewController: UITableViewController {
     // MARK: - TableView Delegate Methods
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        toDoItems?[indexPath.row].done = !toDoItems?[indexPath.row].done
         
-//        This is how we delete items from CoreData
-//        context.delete(toDoItems[indexPath.row])
-//        toDoItems.remove(at: indexPath.row)
-//        saveItems()
-
+        if let item = toDoItems?[indexPath.row] {
+            do {
+                try realm.write {
+                    item.done = !item.done
+                }
+            } catch {
+                print("Error saving done status \(error)")
+            }
+        }
         tableView.deselectRow(at: indexPath, animated: true)
+        tableView.reloadData()
     }
     
     @IBAction func addButtonTapped(_ sender: UIBarButtonItem) {
