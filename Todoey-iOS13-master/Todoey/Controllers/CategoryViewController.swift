@@ -20,6 +20,11 @@ class CategoryViewController: SwipeTableViewController {
         loadCategories()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        guard let navBar = navigationController?.navigationBar else {fatalError("Navigation bar doesn't exist")}
+        navBar.backgroundColor = UIColor(hexString: "1D9BF6")
+    }
+    
     func saveCategories(_ category: Category) {
         do {
             try realm.write{
@@ -80,11 +85,12 @@ class CategoryViewController: SwipeTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
         if let category = categories?[indexPath.row] {
-            cell.backgroundColor = UIColor(hexString: category.colour)
             cell.textLabel?.text = category.name
+
+            guard let categoryColour = UIColor(hexString: category.colour) else { fatalError() }
+            cell.backgroundColor = categoryColour
+            cell.textLabel?.textColor = ContrastColorOf(categoryColour, returnFlat: true)
         }
-
-
         return cell
     }
 
