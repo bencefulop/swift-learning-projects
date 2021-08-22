@@ -22,6 +22,19 @@ class TodoListViewController: SwipeTableViewController {
 
     @IBOutlet weak var searchBar: UISearchBar!
     
+    override func viewWillAppear(_ animated: Bool) {
+        if let colourHex = selectedCategory?.colour {
+            guard let navBar = navigationController?.navigationBar else { fatalError("NavigationController doesn't exist") }
+
+            if let navBarColour = UIColor(hexString: colourHex) {
+                navBar.backgroundColor = navBarColour
+                navBar.tintColor = ContrastColorOf(navBarColour, returnFlat: true)
+                searchBar.barTintColor = navBarColour
+            }
+            
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         searchBar.delegate = self
