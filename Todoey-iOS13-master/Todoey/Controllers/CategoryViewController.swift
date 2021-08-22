@@ -96,16 +96,21 @@ class CategoryViewController: UITableViewController {
 extension CategoryViewController: SwipeTableViewCellDelegate {
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath, for orientation: SwipeActionsOrientation) -> [SwipeAction]? {
         guard orientation == .right else { return nil }
-
+        
         let deleteAction = SwipeAction(style: .destructive, title: "Delete") { action, indexPath in
-            print("item deleted")
+            if let categoryForDeletion = self.categories?[indexPath.row] {
+                do {
+                    try self.realm.write {
+                        self.realm.delete(categoryForDeletion)
+                    }
+                } catch {
+                    print("error deleting item")
+                }
+                tableView.reloadData()
+            }
         }
-
-        // customize the action appearance
         deleteAction.image = UIImage(named: "delete-icon")
-
+        
         return [deleteAction]
     }
-    
-    
 }
