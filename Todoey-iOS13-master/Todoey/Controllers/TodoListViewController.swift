@@ -25,7 +25,6 @@ class TodoListViewController: SwipeTableViewController {
         super.viewDidLoad()
         searchBar.delegate = self
         loadItems()
-        tableView.rowHeight = 80
     }
     
     // MARK: - TableView Datasource Methods
