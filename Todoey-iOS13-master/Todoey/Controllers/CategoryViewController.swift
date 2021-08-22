@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import ChameleonFramework
 
 class CategoryViewController: SwipeTableViewController {
     let realm = try! Realm()
@@ -57,6 +58,7 @@ class CategoryViewController: SwipeTableViewController {
             
             self.saveCategories(newCategory)
             self.tableView.reloadData()
+            self.tableView.separatorStyle = .none
         }
         
         alert.addTextField { alertTextField in
@@ -76,6 +78,7 @@ class CategoryViewController: SwipeTableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = super.tableView(tableView, cellForRowAt: indexPath)
+        cell.backgroundColor = UIColor.randomFlat()
 
         cell.textLabel?.text = categories?[indexPath.row].name ?? "No categories added yet"
 
