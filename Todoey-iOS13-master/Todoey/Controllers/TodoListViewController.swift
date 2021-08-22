@@ -71,14 +71,13 @@ class TodoListViewController: UITableViewController {
         let action = UIAlertAction(title: "Add item", style: .default) { action in
 
             if let currentCategory = self.selectedCategory {
-                do{
+                do {
                     try self.realm.write({
                         let newItem = Item()
                         newItem.title = textField.text!
                         newItem.dateCreated = Date()
                         currentCategory.items.append(newItem)
                     })
-                    
                 } catch {
                     print(error)
                 }
