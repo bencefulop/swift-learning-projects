@@ -41,6 +41,7 @@ class TodoListViewController: SwipeTableViewController {
         searchBar.delegate = self
         loadItems()
         tableView.separatorStyle = .none
+        navigationItem.title = selectedCategory?.name
     }
     
     // MARK: - TableView Datasource Methods
