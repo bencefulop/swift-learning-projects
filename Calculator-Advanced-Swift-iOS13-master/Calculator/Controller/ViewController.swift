@@ -30,16 +30,12 @@ class ViewController: UIViewController {
         isFinishedTypingNumber = true
 
         if let calcMethod = sender.currentTitle {
-            switch calcMethod {
-            case "+/-":
-                displayValue *= -1
-            case "AC":
-                displayLabel.text = "0"
-            case "%":
-                displayValue /= 100
-            default:
-                print("an unknown button was pressed")
+            let calculator = CalculatorLogic(number: displayValue)
+            
+            guard let result = calculator.calculate(symbol: calcMethod) else {
+                fatalError("The result of the calculation is nil")
             }
+            displayValue = result
         }
     }
 
@@ -50,7 +46,6 @@ class ViewController: UIViewController {
                 displayLabel.text = numValue
                 isFinishedTypingNumber = false
             } else {
-                
                 if numValue == "." {
                     let isInt = floor(displayValue) == displayValue
                     if !isInt {
